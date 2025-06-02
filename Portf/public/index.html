@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Real-Time Chat</h1>
+  <ul id="messages"></ul>
+  <form id="chat-form">
+    <input id="message-input" autocomplete="off" placeholder="Type a message..." />
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Include the Socket.IO client script -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    // Prompt user for nickname and room name
+    const nickname = prompt('Enter your nickname:');
+    const room = prompt('Enter room name:');
+
+    // Establish a single socket connection
+    const socket = io();
+
+    // Emit the nickname and room to the server
+    socket.emit('set nickname and join room', { nickname, room });
+
+    // Handle incoming messages
+    socket.on('chat message', ({ nickname, msg }) => {
+      const item = document.createElement('li');
+      item.textContent = `${nickname}: ${msg}`;
+      document.getElementById('messages').appendChild(item);
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+
+    // Handle form submission to send messages
+    document.getElementById('chat-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('message-input');
+      if (input.value) {
+        socket.emit('chat message', input.value);
+        input.value = '';
+      }
+    });
+  </script>
+</body>
+</html>

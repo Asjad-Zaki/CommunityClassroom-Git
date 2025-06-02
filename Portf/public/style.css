@@ -1,0 +1,144 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  
+  #messages li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #chat-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #message-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  
+  #messages li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #chat-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #message-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      #messages {
+        list-style-type: none;
+        padding: 0;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        background: #fff;
+        margin-bottom: 10px;
+      }
+      
+      #messages li {
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+      }
+      
+      #chat-form {
+        display: flex;
+        justify-content: center;
+      }
+      
+      #message-input {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      button {
+        padding: 10px;
+        margin-left: 10px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  }
+  
+  
